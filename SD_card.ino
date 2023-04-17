@@ -44,7 +44,7 @@ String readLog() {
   jsonString += "}";
 
   //  Serial.print(String('{') + String('"') + "uid" + String('"') + String(':') + String('"') + UID + String('"') + String(',') + String('"') + "logs" + String('"')+ String(':') + jsonString + String('}'));
-  String Log_Data = String('{') + String('"') + "uid" + String('"') + String(':') + String('"') + device_uid + String('"') + String(',') + String('"') + "logs" + String('"') + String(':') + jsonString + String('}');
+  String Log_Data = String('{') + String('"') + "uid" + String('"') + String(':') + String('"') + uid + String('"') + String(',') + String('"') + "logs" + String('"') + String(':') + jsonString + String('}');
 
   Serial.println(Log_Data);
   return Log_Data;
