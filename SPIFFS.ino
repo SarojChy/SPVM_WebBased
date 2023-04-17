@@ -20,6 +20,7 @@ void writeFile(fs::FS &fs, const char * path, const char * message) {
   } else {
     Serial.println("- Write failed");
   }
+  file.close();
 }
 // Read File from SPIFFS
 String readFile(fs::FS &fs, const char * path) {
@@ -36,5 +37,6 @@ String readFile(fs::FS &fs, const char * path) {
     fileContent = file.readStringUntil('\n');
     break;
   }
+  file.close();
   return fileContent;
 }
