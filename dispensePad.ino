@@ -16,14 +16,14 @@ void dispensePad1() {
   displayMsg("Please Wait");
   delay(2000);
   lcd.setCursor(0, 1);
-  lcd.print(data);
+  lcd.print(each_uid);
   delay(1000);
   rotateMotor1();
   displayMsg("Collect Your PAD");
   delay(2000);
   displayMsg("   Thank You!");
   delay(2000);
-  displayMsg("Tap Your Card");
+  displayMsg(" Tap Your Card");
 
 }
 void dispensePad2() {
@@ -31,12 +31,12 @@ void dispensePad2() {
   displayMsg("Please Wait");
   delay(2000);
   lcd.setCursor(0, 1);
-  lcd.print(data);
+  lcd.print(each_uid);
   delay(1000);
   rotateMotor2();
   displayMsg("Collect Your PAD");
   delay(2000);
   displayMsg("   Thank You!");
   delay(2000);
-  displayMsg("Tap Your Card");
+  displayMsg(" Tap Your Card");
 }
