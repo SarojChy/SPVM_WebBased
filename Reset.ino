@@ -11,7 +11,7 @@ void Reset() {
       delay(200);
     }
     delay(1000);
-    displayMsg("Tap Your Card");
+    displayMsg(" Tap Your Card");
     lcd.setCursor(1, 1);
     lcd.print("Available: ");
     lcd.setCursor(12, 1);
