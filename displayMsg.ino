@@ -15,7 +15,7 @@ void invalidCard() {
   displayMsg("invalid Card");
   delay(2000);
   lcd.setCursor(0, 1);
-  lcd.print(data);
+  lcd.print(each_uid);
   delay(1000);
   displayMsg(" Tap Your Card");
   lcd.setCursor(1, 1);
@@ -27,7 +27,7 @@ void notEnoughPad() {
   lcd.setCursor(0, 0);
   lcd.print("Not Enough Pad   ");
   delay(1000);
-  displayMsg("Tap Your Card");
+  displayMsg(" Tap Your Card");
   lcd.setCursor(1, 1);
   lcd.print("Available: ");
   lcd.setCursor(12, 1);
