@@ -40,7 +40,7 @@ String check_Tag(String CheckTagServer_1) {
 void postUID() {
   http.begin(client, PostUIDServer);
   http.addHeader("Content-Type", "application/json");
-  int httpPostResponse = http.POST(readLog());
+  int httpPostResponse = http.POST(postLog());
   Serial.println("HTTP POST response code is: " + String(httpPostResponse));
   if ( httpPostResponse == 200) {
     Serial.println("POSS succesed");
